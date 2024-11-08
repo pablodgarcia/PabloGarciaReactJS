@@ -2,29 +2,22 @@
 import './App.css'
 import ItemListContainer from './components/ItemListContainer/ItemListContainer'
 import Navbar from './components/Navbar/Navbar'
-import logo from "./assets/img/logo.jpg"
 
 function App() {
 
   let entrega= "Primer preentrega"
-  let classHuno = "estiloHuno"
-
-
+  let classParr = "estiloParr"
 
   return (
     <>
 
       <div > 
         
-        <img src={logo} alt="Logo" className='imgLogo' /> 
-
         <Navbar/>
-        <ItemListContainer mensaje="Este es mi saludo"/>
+          
+        <ItemListContainer mensaje="Bienvenidos al mundo de las camisetas"/>
       
-        <h1 className={classHuno}>{entrega}</h1>
-
-
-       
+        <p className={classParr}>{entrega}</p>
       
        </div> 
     </>
@@ -32,3 +25,13 @@ function App() {
 }
 
 export default App
+        
+
+
+       
+
+
+
+  //https://github.com/pablodgarcia/PabloGarciaReactJS
+
+

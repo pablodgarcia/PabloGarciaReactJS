@@ -4,7 +4,7 @@ const ItemListContainer = (props) => {
   return (
     <div>
 
-        <h2>{props.mensaje}</h2>
+        <h1 className='estiloHuno'>{props.mensaje}</h1>
 
 
     </div>
