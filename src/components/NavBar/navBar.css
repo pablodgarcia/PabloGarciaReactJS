@@ -1,0 +1,25 @@
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90vw;
+    background-color: black;
+    padding: 5vh;
+}
+
+.productosNav{
+    text-align: start;
+    color: rgb(0, 89, 255);
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    
+  }
+  .productosNav li{
+  
+    padding: 5vh;
+    font-size: larger;
+    font-style: italic;
+  }
+
+  
