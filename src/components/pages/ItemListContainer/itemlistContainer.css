@@ -1,0 +1,15 @@
+.estiloHuno {
+  padding: 5vh;
+  font-size: xx-large;
+  font-style: italic;
+  border-style: double;
+  background-color: rgba(30, 200, 243, 0.966);
+  margin-left: 10px;
+}
+
+.estiloHdos {
+  color: aliceblue;
+  background-color: rgba(30, 200, 243, 0.966);
+  font-style: italic;
+  font-size: x-large;
+}

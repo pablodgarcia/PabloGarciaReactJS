@@ -27,10 +27,8 @@ body {
   display: flex;
   min-width: 320px;
   min-height: 100vh;
-  background-color: #00000021;
+  background-color: #000000;
 }
-
-
 
 button {
   border-radius: 8px;

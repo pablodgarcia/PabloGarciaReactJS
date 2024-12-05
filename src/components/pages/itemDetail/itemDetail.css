@@ -1,0 +1,10 @@
+.imgDetail {
+  width: 100vh;
+  height: 100vh;
+  box-shadow: 20px 14px 10px rgba(99, 111, 216, 0.575);
+}
+
+.descripcionDetail {
+  background-color: rgba(128, 255, 0, 0.623);
+  color: aliceblue;
+}
