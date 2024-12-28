@@ -6,11 +6,9 @@ import { Link } from "react-router-dom";
 const CartWidget = () => {
   return (
     <div className="classCarrito">
-      <div>
-        <Link to="/carrito">
-          <BsCart />
-        </Link>
-      </div>
+      <Link to="/carrito">
+        <BsCart />
+      </Link>
     </div>
   );
 };

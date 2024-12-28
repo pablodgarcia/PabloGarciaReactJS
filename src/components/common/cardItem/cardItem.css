@@ -12,6 +12,11 @@
 .imgCont {
   width: 300px;
   height: 300px;
+  border-radius: 35px;
+}
+.imgCont:hover {
+  transform: scale(1.1) rotate(1deg);
+  transition: transform 0.5s ease-in-out, background-color 0.5s ease-in-out;
 }
 
 .descripcion {
@@ -23,4 +28,13 @@
   margin-left: 100px;
   color: rgb(245, 244, 244);
   font-family: Verdana, Tahoma, sans-serif;
+}
+
+.verDetalles {
+  color: #59f300;
+  text-decoration: inherit;
+}
+.verDetalles:hover {
+  color: aqua;
+  transition: color 0.3s ease;
 }

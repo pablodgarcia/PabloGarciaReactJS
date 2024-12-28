@@ -1,31 +1,36 @@
 import { useEffect, useState } from "react";
-import { products } from "../../../products";
 import { useParams } from "react-router-dom";
 import "./itemDetail.css";
 import Counter from "../../common/counter/Counter";
+import { db } from "../../../firebaseConfig";
+import { collection, getDoc, doc } from "firebase/firestore";
 
 const ItemDetail = () => {
-  const { itemId } = useParams();
+  const { id } = useParams();
 
   const [product, setProduct] = useState({});
 
   useEffect(() => {
-    const elementoEncontrado = products.find(
-      (elemento) => elemento.id === itemId
-    );
-    setProduct(elementoEncontrado);
-  }, [itemId]);
+    let productsColection = collection(db, "products");
+    let refDoc = doc(productsColection, id);
+
+    getDoc(refDoc).then((res) => {
+      setProduct({ ...res.data(), id: res.id });
+    });
+  }, [id]);
 
   return (
     <div>
-      <div>
+      <div className="todoItem">
         <img src={product.imageUrl} alt="" className="imgDetail" />
         <div className="descripcionDetail">
           <h3>{product.title}</h3>
-          <h4>{product.price}</h4>
+          <h4>{product.price}$</h4>
           <h4>{product.descripcion}</h4>
           <h4>{product.marca}</h4>
-          <Counter />
+        </div>
+        <div className="counter">
+          <Counter product={product} />
         </div>
       </div>
     </div>

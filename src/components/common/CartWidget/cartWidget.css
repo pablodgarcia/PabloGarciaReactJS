@@ -1,5 +1,11 @@
 .classCarrito {
-  color: rgb(0, 255, 0);
-  width: 12px;
-  font-size: xx-large;
+  background-color: rgb(226, 226, 226);
+  color: aqua;
+  border-color: aqua;
+}
+
+.classCarrito {
+  color: rgb(255, 196, 0);
+  background-color: rgba(180, 180, 180, 0.596);
+  transition: background-color 0.5s ease-in-out;
 }

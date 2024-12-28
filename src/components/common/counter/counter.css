@@ -5,6 +5,22 @@
   gap: 30px;
 }
 
-button {
-  background-color: rgb(100, 100, 255);
+.buttonCounter {
+  background-color: rgb(2, 2, 2);
+  color: aqua;
+  border-color: aqua;
+  padding: 0.6em 1.2em;
+  border: 1px solid aqua;
+}
+.buttonCounter:hover {
+  color: aqua;
+  background-color: rgba(180, 180, 180, 0.596);
+  transition: background-color 0.5s ease-in-out;
+  padding: 0.6em 1.2em;
+  border: 1px solid transparent;
+}
+h2,
+h4 {
+  color: aqua;
+  font-size: large;
 }

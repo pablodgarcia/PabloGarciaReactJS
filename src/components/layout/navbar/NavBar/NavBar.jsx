@@ -1,4 +1,3 @@
-import CartWidget from "../../../common/CartWidget/CartWidget.jsx";
 import "./navBar.css";
 import Logo from "../../../common/Logo/Logo.jsx";
 import ButtonNavbar from "../../../Button/ButtonNavbar/ButtonNavbar.jsx";
@@ -32,9 +31,8 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <CartWidget />
+              <ButtonCart boton={<BsCart />} />
             </li>
-            <ButtonCart boton={<BsCart />} />
           </div>
         </ul>
       </div>
