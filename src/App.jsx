@@ -1,6 +1,7 @@
 import "./App.css";
+import Navbar from "./components/layout/navbar/NavBar/NavBar";
+
 import ItemListContainer from "./components/pages/ItemListContainer/ItemListContainer";
-import Navbar from "./components/layout/navbar/NavBar/Navbar";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Cart from "./components/pages/cart/Cart";
 import Footer from "./components/layout/footer/Footer";

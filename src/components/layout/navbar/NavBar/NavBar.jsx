@@ -5,7 +5,7 @@ import ButtonCart from "../../../Button/buttonCarrito/ButtonCart.jsx";
 import { BsCart } from "react-icons/bs";
 import { Link } from "react-router-dom";
 
-const Navbar = () => {
+const NavBar = () => {
   return (
     <nav>
       <div className="flex">
@@ -40,4 +40,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default NavBar;
